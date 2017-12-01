@@ -13,6 +13,13 @@ const USER_AGENT = 'https://gist.github.com/derhuerst/173ca78ac1c22b009daf73f35a
 
 const sha256 = text => crypto.createHash('sha256').update(text).digest('hex')
 
+const articleUrl = (articleXmlUrl) => {
+	const parsed = url.parse(articleXmlUrl)
+	delete parsed.host
+	parsed.hostname = 'www.zeit.de'
+	return url.format(parsed)
+}
+
 const imageUrl = (imageXmlUrl) => {
 	const parsed = url.parse(imageXmlUrl)
 	delete parsed.host
@@ -31,7 +38,7 @@ const parseBlock = (block) => {
 	const $ = xmlQuery(block)
 	return {
 		guid: sha256(a.uniqueId),
-		url: a.href,
+		url: articleUrl(a.href),
 		title: $.find('title').text(),
 		description: $.find('description').text(),
 		author: $.find('author').find('display_name').text(),
