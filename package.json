@@ -1,0 +1,32 @@
+{
+	"name": "zeit-online-serie-rss-feed",
+	"description": "Generate an RSS feed for ZEIT Online Serien articles.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"zeit",
+		"newspaper",
+		"rss"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/zeit-online-serie-rss-feed",
+	"repository": "derhuerst/zeit-online-serie-rss-feed",
+	"bugs": "https://github.com/derhuerst/zeit-online-serie-rss-feed/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"tap-min": "^1.2.2",
+		"tape": "^4.8.0"
+	},
+	"scripts": {
+		"test": "node test.js | tap-min",
+		"prepublishOnly": "npm test"
+	}
+}
