@@ -7,6 +7,8 @@ const {fetch} = require('fetch-ponyfill')({Promise})
 const xmlQuery = require('xml-query')
 const XmlReader = require('xml-reader')
 
+const pkg = require('./package.json')
+
 const USER_AGENT = 'https://gist.github.com/derhuerst/173ca78ac1c22b009daf73f35acf8ec6'
 
 const sha256 = text => crypto.createHash('sha256').update(text).digest('hex')
@@ -59,7 +61,7 @@ const generateRawFeed = (serie) => {
 			site_url: 'http://www.zeit.de/serie/' + serie,
 			image_url: null,
 			language: 'de',
-			generator: 'https://gist.github.com/derhuerst/173ca78ac1c22b009daf73f35acf8ec6'
+			generator: pkg.homepage
 		}
 		const onRegion = (region) => {
 			if (!region.attributes || region.attributes.kind !== 'solo') return
