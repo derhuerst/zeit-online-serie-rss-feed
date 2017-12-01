@@ -4,7 +4,8 @@
 	"version": "0.1.0",
 	"main": "index.js",
 	"files": [
-		"index.js"
+		"index.js",
+		"raw.js"
 	],
 	"keywords": [
 		"zeit",
@@ -20,6 +21,10 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"fetch-ponyfill": "^4.1.0",
+		"pinkie-promise": "^2.0.1",
+		"xml-query": "^1.4.0",
+		"xml-reader": "^2.4.3"
 	},
 	"devDependencies": {
 		"tap-min": "^1.2.2",
