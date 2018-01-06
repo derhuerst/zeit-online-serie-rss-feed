@@ -22,7 +22,7 @@
 	},
 	"dependencies": {
 		"fetch-ponyfill": "^4.1.0",
-		"pinkie-promise": "^2.0.1",
+		"pinkie-promise": "^2.0.2",
 		"rss": "^1.2.2",
 		"xml-query": "^1.4.0",
 		"xml-reader": "^2.4.3"
