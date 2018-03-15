@@ -31,7 +31,7 @@
 		"co": "^4.6.0",
 		"tap-min": "^1.2.2",
 		"tape": "^4.8.0",
-		"tape-promise": "^2.0.1"
+		"tape-promise": "^3.0.0"
 	},
 	"scripts": {
 		"test": "node test.js | tap-min",
