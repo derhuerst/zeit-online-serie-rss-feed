@@ -1,6 +1,8 @@
 # zeit-online-serie-rss-feed
 
-**Generate an RSS feed for [ZEIT Online](http://www.zeit.de/index) Serien articles.**
+**Deprecated. Use `https://newsfeed.zeit.de/serie/name-of-the-series`.**
+
+Generate an RSS feed for [ZEIT Online](http://www.zeit.de/index) Serien articles.
 
 [![npm version](https://img.shields.io/npm/v/zeit-online-serie-rss-feed.svg)](https://www.npmjs.com/package/zeit-online-serie-rss-feed)
 [![build status](https://api.travis-ci.org/derhuerst/zeit-online-serie-rss-feed.svg?branch=master)](https://travis-ci.org/derhuerst/zeit-online-serie-rss-feed)
