@@ -2,7 +2,7 @@
 
 **Deprecated. Use `https://newsfeed.zeit.de/serie/name-of-the-series`.**
 
-Generate an RSS feed for [ZEIT Online](http://www.zeit.de/index) Serien articles.
+Generate an RSS feed for [ZEIT Online](https://www.zeit.de/index) Serien articles.
 
 [![npm version](https://img.shields.io/npm/v/zeit-online-serie-rss-feed.svg)](https://www.npmjs.com/package/zeit-online-serie-rss-feed)
 [![build status](https://api.travis-ci.org/derhuerst/zeit-online-serie-rss-feed.svg?branch=master)](https://travis-ci.org/derhuerst/zeit-online-serie-rss-feed)
@@ -19,7 +19,7 @@ npm install zeit-online-serie-rss-feed
 
 ## Usage
 
-Identify the slug from the URL of the *Serie* you want to get an RSS feed from. Es an example, the [*Jung und Gott* *Serie*](http://www.zeit.de/serie/jung-und-gott) has the slug `jung-und-gott`.
+Identify the slug from the URL of the *Serie* you want to get an RSS feed from. Es an example, the [*Jung und Gott* *Serie*](https://www.zeit.de/serie/jung-und-gott) has the slug `jung-und-gott`.
 
 ```js
 const serie = 'jung-und-gott'
