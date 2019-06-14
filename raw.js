@@ -41,7 +41,7 @@ const parseBlock = (block) => {
 		url: articleUrl(a.href),
 		title: $.find('title').text(),
 		description: $.find('description').text(),
-		author: $.find('author').find('display_name').text(),
+		author: $.attr('author'),
 		enclosure: { // todo: is this the way to do images?
 			url: imageUrl($.find('image').attr('base-id'))
 		}
