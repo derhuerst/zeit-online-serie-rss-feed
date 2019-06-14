@@ -18,7 +18,7 @@
 	"bugs": "https://github.com/derhuerst/zeit-online-serie-rss-feed/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=8"
 	},
 	"dependencies": {
 		"fetch-ponyfill": "^6.0.0",
@@ -29,9 +29,9 @@
 	},
 	"devDependencies": {
 		"co": "^4.6.0",
-		"tap-min": "^1.2.2",
+		"tap-min": "^2.0.0",
 		"tape": "^4.8.0",
-		"tape-promise": "^3.0.0"
+		"tape-promise": "^4.0.0"
 	},
 	"scripts": {
 		"test": "node test.js | tap-min"
